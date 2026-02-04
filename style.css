@@ -1,0 +1,133 @@
+body {
+  display: grid;
+  min-height: 100vh;
+  justify-items: center;
+  background-color: #dcdcdc;
+  margin: 0;
+}
+
+.page {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.full-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 0.2rem;
+}
+
+.title {
+  grid-column: 1 / -1;
+  margin-bottom: 0.25rem;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 0.5rem;
+  column-gap: 0.25rem;
+  padding-bottom: 2rem;
+  border-radius: 8px;
+  order: 1;
+  background-color: white;
+  margin: 0;
+  padding: 1rem;
+}
+
+.meal {
+  display: flex;
+  width: 10rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  gap: 0.5rem;
+}
+
+.price {
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+.bottom-table {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-radius: 8px;
+  gap: 0.5rem;
+  padding: 1rem;
+  order: 3;
+  background-color: white;
+  align-items: center;
+}
+
+.reset {
+  grid-column: 1/-1;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: red;
+  height: 3rem;
+  color: white;
+}
+
+.action-buttons {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.action-buttons button {
+  width: 100%;
+}
+
+.place {
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+}
+
+.delivery {
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #1e90ff;
+  color: white;
+}
+
+.meal:hover {
+  border: 2px solid #1e90ff;
+}
+
+.total {
+  font-size: 2rem;
+  color: #1e90ff;
+  font-weight: bolder;
+}
+
+.total::after {
+  content: "€";
+}
+
+.order {
+  display: grid;
+  order: 2;
+  border-radius: 8px;
+  width: 12rem;
+  padding: 1rem;
+
+  background-color: white;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
