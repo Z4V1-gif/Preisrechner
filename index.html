@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preisrechner</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="page">
@@ -13,82 +14,83 @@
           <h1 class="title">Preisrechner</h1>
           <button class="meal">
             Kaffee
-            <p class="price">3,50€</p>
+            <p class="price">3,50</p>
           </button>
           <button class="meal">
             Tee
-            <p class="price">2,50€</p>
+            <p class="price">2,50</p>
           </button>
           <button class="meal">
             Apfelschorle
-            <p class="price">4,00€</p>
+            <p class="price">4,00</p>
           </button>
           <button class="meal">
             Wasser
-            <p class="price">2,00€</p>
+            <p class="price">2,00</p>
           </button>
           <button class="meal">
             Bratwurst
-            <p class="price">5,50€</p>
+            <p class="price">5,50</p>
           </button>
           <button class="meal">
             Schnitzel
-            <p class="price">12,50€</p>
+            <p class="price">12,50</p>
           </button>
           <button class="meal">
             Currywurst
-            <p class="price">6,00€</p>
+            <p class="price">6,00</p>
           </button>
           <button class="meal">
             Brezel
-            <p class="price">4,50€</p>
+            <p class="price">4,50</p>
           </button>
           <button class="meal">
             Käsespätzle
-            <p class="price">8,00€</p>
+            <p class="price">8,00</p>
           </button>
           <button class="meal">
             Pommes
-            <p class="price">3,50€</p>
+            <p class="price">3,50</p>
           </button>
           <button class="meal">
             Apfelstrudel
-            <p class="price">4,50€</p>
+            <p class="price">4,50</p>
           </button>
           <button class="meal">
             Berliner
-            <p class="price">3,00€</p>
+            <p class="price">3,00</p>
           </button>
           <button class="meal">
             Schwarzwälder
-            <p class="price">5,00€</p>
+            <p class="price">5,00</p>
           </button>
           <button class="meal">
             Brötchen
-            <p class="price">2,50€</p>
+            <p class="price">2,50</p>
           </button>
           <button class="meal">
             Leberkäse
-            <p class="price">7,00€</p>
+            <p class="price">7,00</p>
           </button>
           <button class="meal">
             Kartoffelsalat
-            <p class="price">6,50€</p>
+            <p class="price">6,50</p>
           </button>
           <br />
         </div>
         <!-- <hr /> -->
         <div class="bottom-table">
           <h2 class="subtitle">Gesamt</h2>
-          <span class="total" id="total-pirce">0,00</span>
+          <span class="total" id="total-price">0,00</span>
           <!-- <span>€</span> -->
 
-          <button class="reset">Zurücksetzen</button>
+          <button class="reset button" id="reset">Zurücksetzen</button>
           <div class="action-buttons">
-            <button class="place">Vor Ort</button>
-            <button class="delivery">Lieferung</button>
+            <button class="place button" id="place">Vor Ort</button>
+            <button class="delivery button" id="delivery">Lieferung</button>
           </div>
         </div>
+
         <div class="order">
           <h2 class="subtitle">Bestellungen</h2>
           <div class="order-list">Platzhalter</div>
