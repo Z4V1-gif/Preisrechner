@@ -22,6 +22,8 @@ const mealButtons = document.querySelectorAll(".meal");
 const totalElement = document.querySelector(".total");
 const orderListElement = document.querySelector(".order-list");
 const resetButton = document.getElementById("reset");
+const placeButton = document.getElementById("place");
+const deliveryButton = document.getElementById("delivery");
 
 let total = 0;
 
@@ -78,3 +80,29 @@ mealButtons.forEach((button) => {
     addToOrder(name, price);
   });
 });
+
+function placeOrder() {
+  alert("Bestellung vor Ort abgeschlossen, Gesamtbetrag: " + total + "€");
+  resetList();
+}
+
+placeButton.addEventListener("click", placeOrder);
+
+function deliveryOrder() {
+  if (total <= 20) {
+    alert(
+      "Mindestbesellwert für Lieferung beträgt 20€. Aktueller Betrag: " +
+        total +
+        "€",
+    );
+  } else
+    alert(
+      "Bestellung für Lieferung abgeschlossen! Gesamtbetrag: " +
+        (total + 2.5).toFixed(2) +
+        "€",
+    );
+
+  resetList();
+}
+
+deliveryButton.addEventListener("click", deliveryOrder);
