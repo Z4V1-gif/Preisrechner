@@ -151,45 +151,44 @@ body {
   margin-bottom: 0rem;
 }
 
-/* Media Query für mobile Geräte (Bildschirme schmaler als 768px) */
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .full-table {
-    /* Stapelt die linke Seite (Speisekarte) und rechte Seite (Bestellungen) untereinander */
     grid-template-columns: 1fr;
     padding: 0.5rem;
+    /* Stapelt die linke Seite (Speisekarte) und rechte Seite (Bestellungen) untereinander */
   }
 
   .table {
-    /* Ändert die 4 Spalten zu 2 Spalten, damit die Buttons Platz haben */
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     order: 1;
+    /* Ändert die 4 Spalten zu 2 Spalten, damit die Buttons Platz haben */
   }
 
   .meal {
-    /* Entfernt die feste Breite von 10rem, damit die Buttons flexibel wachsen */
     width: 100%;
     max-width: 160px;
     height: 4.5rem;
+    /* Entfernt die feste Breite von 10rem, damit die Buttons flexibel wachsen */
   }
 
   .order {
-    /* Die Bestellliste rutscht unter die Buttons, aber über das "Gesamt"-Feld */
     width: auto;
     order: 2;
     max-height: 300px;
+    /* Die Bestellliste rutscht unter die Buttons, aber über das "Total"-Feld */
   }
 
   .bottom-table {
-    /* Das Gesamt-Feld und die Buttons kommen ganz nach unten */
     order: 3;
     position: sticky;
     bottom: 0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .title {
-    font-size: 1.5rem;
-    text-align: center;
+    /* Das Total-Feld und die Buttons kommen ganz nach unten */
   }
 }
