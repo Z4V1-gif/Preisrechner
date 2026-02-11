@@ -4,6 +4,8 @@ body {
   justify-items: center;
   background-color: #dcdcdc;
   margin: 0;
+  font-family:
+    sans-serif, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .page {
@@ -16,8 +18,8 @@ body {
 .full-table {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  row-gap: 0.5rem;
   column-gap: 1rem;
-  row-gap: 0.2rem;
 }
 
 .title {
@@ -29,7 +31,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 0.5rem;
-  column-gap: 0.25rem;
+  column-gap: 0.5rem;
   padding-bottom: 2rem;
   border-radius: 8px;
   order: 1;

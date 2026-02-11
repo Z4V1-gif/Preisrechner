@@ -38,7 +38,7 @@ function addPrice(price) {
 function addToOrder(name, price) {
   const item = document.createElement("div");
   // wird eine theoretisch leeres div erstellt
-  item.textContent = name + " + " + price.toFixed(2) + " €";
+  item.textContent = name + "   " + price.toFixed(2) + " €";
 
   orderListElement.appendChild(item);
   //appendChild = Hänge dieses Element unten an
@@ -95,14 +95,16 @@ function deliveryOrder() {
         total +
         "€",
     );
-  } else
+  } else {
     alert(
       "Bestellung für Lieferung abgeschlossen! Gesamtbetrag: " +
         (total + 2.5).toFixed(2) +
         "€",
     );
+    resetList();
+  }
 
-  resetList();
+  // resetList();
 }
 
 deliveryButton.addEventListener("click", deliveryOrder);
